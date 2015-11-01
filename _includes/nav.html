@@ -1,0 +1,23 @@
+<nav>
+	<ul>
+		<li>
+			<a class='{% if page.url == "/" %}current{% endif %}' href="{{site.baseurl}}/index.html">Home</a>
+		</li>
+		
+		<li>
+			<a class='{% if page.url == "/about.html" %}current{% endif %}' href="{{site.baseurl}}/about.html">About</a>
+		</li>
+		
+		<li>
+			<a class='{% if page.url == "/projects/" %}current{% endif %}' href="{{site.baseurl}}/projects/">Projects</a>
+		</li>
+
+		<li>
+			<a class='{% if page.url == "/blog/" %}current{% endif %}' href="{{site.baseurl}}/blog/">Blog</a>
+		</li>		
+		
+		<li>
+			<a class='{% if page.url == "/contact.html" %}current{% endif %}' href="{{site.baseurl}}/contact.html">Contact</a>
+		</li>
+	</ul>
+</nav>

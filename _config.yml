@@ -1,0 +1,7 @@
+title: Vikas Lalwani
+description: Vikas Lalwani's home on internet.
+baseurl: ""
+url: "http://vikaslalwani.com"
+exclude: ['README.md']
+
+markdown: kramdown

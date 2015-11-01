@@ -1,0 +1,12 @@
+html {
+	font-family: sans-serif;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+.current {
+	background-color: yellow;
+}
