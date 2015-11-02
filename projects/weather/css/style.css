@@ -1,0 +1,173 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+ *
+ Main Page CSS
+ *
+ *
+*/
+
+body {
+	background-color: #607D8B;
+	text-align: center;
+	max-width: 700px;
+	margin: 70px auto 20px;
+	padding: 0 40px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+}
+
+#mainIcon {
+	width: 60%;
+	height: auto;
+}
+
+input#query  {
+	outline: none;
+	border: none;
+	background: #ECEFF1;
+	margin: 40px auto 20px;
+	display: block;
+	padding: 20px 30px;
+	width: 90%;
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.3rem;
+	font-weight: 300;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 1px 8px 0 rgba(0,0,0,0.1);
+}
+
+input::-webkit-input-placeholder {
+    color: #000;
+    opacity: 0.5;
+    font-size: 1.9rem;
+    font-weight: 300;
+    padding-top: 6px;
+}
+input::-moz-placeholder {
+    color: #000;
+    opacity: 0.5;
+    font-size: 1.9rem;
+    font-weight: 300;
+    padding-top: 6px;
+}
+
+#response {
+	display: none;
+}
+
+.resultDiv {
+	width: 90%;
+	margin: 15px auto;
+	padding: 20px 30px;
+	background: #CFD8DC;
+	border-radius: 3px;
+	text-align: left;
+	font-weight: 300;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 1px 8px 0 rgba(0,0,0,0.1);
+}
+
+.resultDiv h1 {
+	font-weight: 100;
+	font-size: 7.5rem;
+	line-height: 6rem;
+	color: #37474F;
+}
+
+.resultDiv h2 {
+	font-size: 2rem;
+	line-height: 3rem;
+	color: #37474F;
+}
+
+.resultDiv h3 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	color: #546E7A;
+}
+
+.data {
+	display: inline-block;
+	margin: 40px 25px 30px 0;
+}
+
+.data h1 {
+	display: inline-block;
+}
+
+.details {
+	float: right;
+}
+
+/*Styles for weather icons*/
+
+#icon {
+	width: 75px;
+	height: 75px;
+	vertical-align: top;
+}
+
+#icon1 {
+	width: 40px;
+	height: 40px;
+	float: left;
+	padding-right: 10px;
+}
+
+#icon2 {
+	width: 40px;
+	height: 40px;
+	float: left;
+	padding-right: 10px;
+}
+
+
+
