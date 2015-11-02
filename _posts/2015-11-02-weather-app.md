@@ -6,7 +6,7 @@ day: 2
 
 It is day 2 of my challenge and I am once again up late night. But I am happy with what I made today. Today's task was to make a weather app. I was thinking that it might be easier to make but to my surprise it wasn't easy by any measure.
 
-You can try out the app here: You can try out the app here: [http://vikaslalwani.com/projects/weather/](You can try out the app here: http://vikaslalwani.com/projects/weather/)
+You can try out the app here: You can try out the app here: [http://vikaslalwani.com/projects/weather/](http://vikaslalwani.com/projects/weather/)
 
 
 Here's how I made the weather app:
