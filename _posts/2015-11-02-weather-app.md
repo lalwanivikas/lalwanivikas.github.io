@@ -18,6 +18,12 @@ Here's how I made the weather app:
 * I used colors from Google's Material Design template and they have some pretty neat collections. I will most probably keep using it for my future projects as well.
 
 
+Challenges
+---
+* Making the geocoding work for all regions. Since every region has different naming system, Google responds with a huge object and you have to figure out what to display. It has to be standard for any type of entry - area, city, state, country, landmark etc.
+* Another challenge was to make the display time work. If you are viewing weather of Australia then it does not makes sense to show time in UK time. So I had to manipulate the time accordingly.
+
+
 About ugly home page:
 ---
 My home page is still very ugly as there is literally nothing in it. In fact my whole website is like that. I plan to fix it by continuously learning Jekyll in parallel. After few different projects I will take up personal site design as single day project. This way I can improve the site couple of times in few months. And hopefully I can master Jekyll in the process :)  

@@ -1,0 +1,47 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	width: 600px;
+	text-align: center;
+	margin: 100px auto;
+	font-size: 100%;
+	background: #546E7A;
+}
+
+.container {
+	width: 80%;
+	padding: 20px 5px;
+	margin: 15px auto;
+	background: #fff;
+	color: #000;
+	font-size: 2rem;
+	font-weight: 300;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 1px 8px 0 rgba(0,0,0,0.1);
+}
+
+.row div {
+	display: inline-block;
+	width: 50px;
+	padding: 10px 22px;
+	margin: 6px;
+	cursor: pointer;
+	border: 1px solid #CFD8DC;
+	border-radius: 3px;
+	background-color: #ECEFF1;
+}
+
+.row div:hover {
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 1px 8px 0 rgba(0,0,0,0.1);
+}
+
+.output {
+	width: 72%;
+	height: 40px;
+	text-align: right;
+	font-size: 2.5rem;
+	background-color: #fff;
+	padding: 15px 30px;
+	letter-spacing: 0.25rem;
+	overflow-x: scroll;
+}
+

@@ -9,11 +9,11 @@
 		</li>
 		
 		<li>
-			<a class='{% if page.url == "/projects/" %}current{% endif %}' href="{{site.baseurl}}/projects/">Projects</a>
+			<a class='{% if page.url contains "projects" %}current{% endif %}' href="{{site.baseurl}}/projects/">Projects</a>
 		</li>
 
 		<li>
-			<a class='{% if page.url == "/blog/" %}current{% endif %}' href="{{site.baseurl}}/blog/">Blog</a>
+			<a class='{% if page.url contains "blog" %}current{% endif %}' href="{{site.baseurl}}/blog/">Blog</a>
 		</li>		
 		
 		<li>
