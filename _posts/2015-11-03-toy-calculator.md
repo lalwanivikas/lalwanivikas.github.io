@@ -1,14 +1,16 @@
 ---
 layout: blog
-title: Basic Calculator
+title: Toy Calculator
 day: 3
 ---
+
+Note: toy calculator is buggy. For accuate answers you should check out [a little better version](http://vikaslalwani.com/projects/calculator/).
 
 Today's task was to make a basic calculator in HTML/CSS/JS. It looks very easy from the outside but is actually quite complex. Plan was to let a user enter any string and then evaluate it to display the final result. But I was able to only implement a subset of this functionality as parsing a complex string, is well, complex. 
 
 In its current shape you can enter only a string consisting of one type of operator to get the correct result.
 
-You can try the app here: [http://vikaslalwani.com/projects/calculator/](http://vikaslalwani.com/projects/calculator/).
+You can try the app here: [http://vikaslalwani.com/projects/toy-calculator/](http://vikaslalwani.com/projects/toy-calculator/).
 
 Key Points
 ---
