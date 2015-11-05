@@ -36,12 +36,15 @@ body {
 
 .resultDiv {
 	width: 75%;
-	height: 40px;
 	text-align: right;
-	font-size: 2.5rem;
+	font-size: 2.8rem;
 	background-color: #fff;
 	padding: 2.8% 5.5%;
 	letter-spacing: 0.25rem;
 	overflow-x: scroll;
+}
+
+#output {
+	height: 2.8rem;
 }
 

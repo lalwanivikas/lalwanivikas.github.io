@@ -1,0 +1,178 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	background: #eeeeee url('https://todolist.parseapp.com/images/bg.png');
+	font-family: 'Titillium Web', sans-serif;
+	max-width: 600px;
+	font-size: 100%;
+	font-weight: 300;
+	letter-spacing: 0.1rem;
+	color: #7d7d7d;
+}
+
+h1 {
+	text-align: center;
+	font-weight: 400;
+	font-size: 3rem;
+	margin: 5% 0;
+	color: #795548;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 1.8rem;
+	margin: 1% 0 1.5%;
+	color: #2196F3;
+}
+
+.container {
+	width: 85%;
+	margin: 3% auto;
+	padding: 2% 2% 2% 5%;
+	background-color: #F7F7F7;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 1px 8px 0 rgba(0,0,0,0.1);
+}
+
+input#newEntry {
+	width: 100%;
+	border: none;
+	outline: none;
+	border-radius: 2px;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 2rem;
+	font-weight: 300;
+	color: #7d7d7d;
+	background: transparent;
+	letter-spacing: 0.1rem;
+}
+
+input::-webkit-input-placeholder {
+	color: #000;
+	opacity: 0.5;
+	font-size: 1.5rem;
+	font-weight: 300;
+	padding-top: 1.5%;
+}
+
+input::-moz-placeholder {
+	color: #000;
+	opacity: 0.5;
+	font-size: 1.5rem;
+	font-weight: 300;
+	padding-top: 1.5%;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	font-size: 1.5rem;
+	margin: 1% 0;
+}
+
+
+ul li label {
+	padding: 0 2%;
+	vertical-align: middle;
+}
+
+
+ul li .delete {
+	border: none;
+	outline: none;
+	color: #cc9a9a;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #f8f8f8;
+	border: 1px solid #ccc;
+	font-size: 1.5rem;
+	padding-bottom: 1%;
+	margin: 1%;
+	vertical-align: top;
+	transition: color 0.2s ease-out;
+	transition: border-color 0.2s ease-out;
+}
+
+ul li .delete:hover {
+	color: #D36767;
+	cursor: pointer;
+	border-color: #D36767;
+}
+
+ul li .edit{
+    background: url("https://image.freepik.com/free-icon/edit-list_318-9980.jpg");
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1%;
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 50%;
+    opacity: 0.2;
+    vertical-align: top;
+	transition: border-color 0.2s ease-out;
+	-webkit-transition: opacity 0.5s ease 0s;
+}
+
+
+ul li .save {
+    background: url("http://www.somerandomdude.com/wp-content/uploads/save-icon.png");
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1%;
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 50%;
+    opacity: 0.2;
+    vertical-align: top;
+	transition: border-color 0.2s ease-out;
+	-webkit-transition: opacity 0.5s ease 0s;
+}
+
+ul li .edit:hover,
+ul li .save:hover {
+	opacity: 1;
+	cursor: pointer;
+	border-color: #aaa;
+}
+
+ul li input[type="text"] {
+	width: 60%;
+	border: none;
+	outline: none;
+	border-radius: 2px;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: #7d7d7d;
+	background: transparent;
+	letter-spacing: 0.1rem;
+	border: 1px solid #bbb;
+	padding-left: 2%;
+}
+
+
+input[type=checkbox]{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.2); /* IE */
+  -moz-transform: scale(1.2); /* FF */
+  -webkit-transform: scale(1.2); /* Safari and Chrome */
+  -o-transform: scale(1.2); /* Opera */
+}
+
+ul#completed label {
+	text-decoration: line-through;
+}
+
+#pendingItems, 
+#completedItems {
+	display: none;
+}
