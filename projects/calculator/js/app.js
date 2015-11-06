@@ -51,19 +51,23 @@ $buttons.addEventListener('click', function(event){
 // handling click event on equate button
 $equate.addEventListener('click', function(){
     
-    result = evaluate($output.innerHTML);
-    
-    $output.innerHTML = result;
-    
-    if(result % 1 !== 0) {
-        if(result.toString().split('.')[1].length > 2) {
-            $output.innerHTML = result.toFixed(2);
-        }
-    } else {
-        $output.innerHTML = result;
+    var lastCharacter = $output.innerHTML[$output.innerHTML.length - 1];
+
+    if (lastCharacter !== "+" && lastCharacter !== "-" && lastCharacter !== "×" && lastCharacter !== "÷") {
+      result = evaluate($output.innerHTML);
+      
+      $output.innerHTML = result;
+      
+      if(result % 1 !== 0) {
+          if(result.toString().split('.')[1].length > 5) {
+              $output.innerHTML = result.toFixed(5);
+          }
+      } else {
+          $output.innerHTML = result;
+      }
+      
+      resultDisplayed = true;
     }
-    
-    resultDisplayed = true;
 
 });
 
