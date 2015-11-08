@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Freehand Drawing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1>Freehand Drawing</h1>
+	<div id="toolbar">
+		<div id="rad">
+			Radius: <span id="radVal">10</span>
+			<div id="decRad" class="radControl">-</div>
+			<div id="incRad" class="radControl">+</div>
+		</div>
+		<div id="colors">
+			<div class="swatch active" style="background-color: #FF5722"></div>
+			<div class="swatch" style="background-color: #4CAF50"></div>
+			<div class="swatch" style="background-color: #80D8FF"></div>
+		</div>
+		<div id="save" class="saveButton">
+			Save
+		</div>
+		<div id="clear" class="saveButton">
+			Clear
+		</div>
+	</div>
+	<canvas id="canvas">
+		Sorry, but I think you are using a really old browser :(
+	</canvas>
+	<script type="text/javascript" src="js/drawing.js"></script>
+	<script type="text/javascript" src="js/radius.js"></script>
+	<script type="text/javascript" src="js/colors.js"></script>
+	<script type="text/javascript" src="js/save.js"></script>
+</body>
+</html>
