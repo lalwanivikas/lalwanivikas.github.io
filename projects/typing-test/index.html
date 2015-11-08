@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Typing Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div class="startWindow">
+		<div class="startModal">
+			<h1>Typing Test</h1>
+			<h2>Test your typing speed in just a min!</h2>
+			<button id="startButton">Start Test</button>
+		</div>
+	</div>
+	
+	<div class="testWindow">
+		<div class="timeStrip">
+			<h2>Time remaining: <span id="timer">60</span>s</h2>
+		</div>
+		
+		<div>
+			<p id="testPara" readonly></p>
+			<textarea id="responsePara" onPaste="return false" placeholder="Clock will start once you start typing!"></textarea>
+		</div>
+	</div>
+
+	<div class="startWindow" id="resultWindow">
+		<div class="startModal">
+			<h1>Time is up!</h1>
+			<h2>Your speed is <span id="score"></span> words/min.</h2>
+			<button id="testAgain">Retake Test</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/typing-test.js"></script>
+</body>
+
+</html>
