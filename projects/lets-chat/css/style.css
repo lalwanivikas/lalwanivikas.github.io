@@ -92,6 +92,6 @@ input::-moz-placeholder {
     border-radius: 4px;
     overflow-y: auto;
     background: #fff;
-    min-height: 20rem;
+    height: 20rem;
 }
 
