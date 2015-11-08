@@ -34,7 +34,7 @@ function getPara(callback) {
     httpRequest.onload = function(){ // when the request is loaded
        callback(httpRequest.responseText);// we're calling our method
     };
-    httpRequest.open('GET', "../data/test-para.json");
+    httpRequest.open('GET', "/data/test-para.json");
     httpRequest.send();
 }
 
