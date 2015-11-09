@@ -1,0 +1,45 @@
+body {
+	font-family: sans-serif;
+	color: #000;
+	font-weight: 300;
+	margin: 0;
+	letter-spacing: 0.4px;
+}
+
+h3 {
+	color: #626262;
+	font-size: 18px;
+	font-weight: 300;
+	margin: 8px 0 8px 15px;
+}
+
+.row a {
+	display: block;
+	color: #525252;
+	font-size: 15px;
+	text-decoration: none;
+	padding: 5px 15px;
+	background: rgba(255,255,255,0.95);
+}
+
+.row a:hover {
+	color: #fff;
+	background: #525252;
+}
+
+.row {
+	padding: 0;
+	margin: 0;
+}
+
+.team-name {
+	font-weight: bold;
+}
+
+.container {
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+

@@ -1,0 +1,17 @@
+{
+  "name": "Live-Cricket-Scores",
+  "version": "1.0.0",
+  "description": "View current score of all cricket matches",
+  "dependencies": {
+    "menubar": "*"
+  },
+  "devDependencies": {
+    "electron-packager": "^5.1.1",
+    "electron-prebuilt": "^0.34.1"
+  },
+  "main": "main.js",
+  "scripts": {
+    "build": "electron-packager . Example --platform=darwin --arch=x64 --version=0.34.1 --icon=Icon.icns",
+    "start": "electron ."
+  }
+}
