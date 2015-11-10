@@ -1,0 +1,43 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	max-width: 600px;
+	text-align: center;
+	margin: 50px auto;
+	font-size: 100%;
+	background: #2e416a;
+}
+
+h1, h2{
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+}
+
+#noResult {
+	display: none;
+}
+
+#map { 
+	width: 90%;
+	height: 30rem;
+	margin: 0 auto; 
+}
+
+#nextResult {
+	background: #E91E63;
+	cursor: pointer;
+	width: 90%;
+	margin: 2% auto;
+	font-size: 1.5rem;
+	padding: 2% 0;
+	color: #fff;
+	font-weight: 300;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */ 
+}
+
+#nextResult:hover {
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 15px 25px 0 rgba(0,0,0,0.1);
+}
