@@ -1,0 +1,48 @@
+body {
+	font-family: sans-serif;
+	line-height: 1.4rem;
+	letter-spacing: 0.05rem;
+	margin: 0px auto;
+	padding: 0;
+	font-size: 100%;
+}
+
+#mainTitle {
+	height: 25px;
+	font-size: 1.2rem;
+	background-color: #8C8;
+	padding: .5%;
+	margin-bottom: .5%;
+	color: #fff;
+	font-weight: 300;
+	text-align: center;
+}
+
+.container {
+	width: 96%;
+	margin: 0 auto;
+}
+
+.boxStyle {
+	border: none;
+	outline: none;
+	width: 47%;
+	height: 90vh;
+	display: inline-block;
+	border: 1px solid #09F;
+	border-radius: 3px;
+	padding: 10px;
+	font-size: 1rem;
+	margin: 0 0.2%;
+	font-weight: 300;
+	font-family: sans-serif;
+	line-height: 1.4rem;
+	letter-spacing: 0.05rem;
+	color: #4a525a;
+	overflow-y: scroll;
+}
+
+textarea {
+   resize: none;
+   float: left;
+}
