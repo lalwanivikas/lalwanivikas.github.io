@@ -1,31 +1,39 @@
 'use strict;'
 
-var playerMoves = [],
+var counter = 0,
+	playerMoves = [],
 	computerMoves = [],
 	winnerArray = ['012', '345', '678', '036', '147', '258', '048', '246'];
 
 
-var resultText = document.getElementById('resultText'),
-	board = document.getElementsByClassName('board')[0],
+var board = document.getElementsByClassName('board')[0],
 	square = document.getElementsByClassName('square'),
-	playingArea = document.querySelectorAll('.square div');
+	playingArea = document.querySelectorAll('.square div'),
+	resultDiv = document.getElementById('resultDiv'),
+	playAgain = document.getElementById('playAgain');
+
+playAgain.addEventListener('click', function(){
+	window.location.reload();
+});
 
 
 for (var i = 0; i < square.length; i++) {
 	square[i].addEventListener('click', function(event){
 		var result = game(event);
 		console.log(result);
-		if(result == "you won" || result == "computer won" || result == "tie!" ) {
-			resultText.innerHTML = result; 
-			resultText.style.display = "block";
-			board.style.display = "none";
+		if(result == "You won!" || result == "Computer won." || result == "It's a tie!" ) {
+			window.setTimeout(function(){
+				resultText.innerHTML = result; 
+				resultDiv.style.display = "block";
+				board.style.display = "none";
+			}, 800);
 		}
 	});
 }
 
 
 function game(event) {
-	
+
 	var playingArea = event.target.querySelector('.square div');
 	var playerId = playingArea.getAttribute('id');
 	
@@ -34,45 +42,49 @@ function game(event) {
 		// player moves
 		playingArea.setAttribute('class', 'cross');
 		playerMoves.push(playerId);
+		
+		counter++;
 
-		console.log(playerMoves);
+		if (playerMoves.length > 2) {
+			var status = evaluateWinner(playerMoves);
+			if (status == "winner") {
+				return "You won!"; 
+			}
+		}
 
-		// computer moves
-		var computerId = nextMove();
-		while (playerMoves.indexOf(computerId) !== -1 || computerMoves.indexOf(computerId) !== -1) {
-			computerId = nextMove();
+		if (counter == 5) {
+			return "It's a tie!";
 		}
-	
-		var nextSquare = square[computerId];
-		var nextPlayingArea = nextSquare.querySelector('.square div');
-		nextPlayingArea.setAttribute('class', 'circle');
-		computerMoves.push(computerId);
 
-	}
-	
-	if (playerMoves.length > 2) {
-	
-		var status = evaluateWinner(playerMoves);
-		if (status == "winner") {
-			return "you won"; 
+		if (counter < 5) {
+			// computer moves
+			var computerId = nextMove();
+			while (playerMoves.indexOf(computerId) !== -1 || computerMoves.indexOf(computerId) !== -1) {
+				computerId = nextMove();
+			}
+		
+			var nextSquare = square[computerId];
+			var nextPlayingArea = nextSquare.querySelector('.square div');
+			window.setTimeout(function(){
+				nextPlayingArea.setAttribute('class', 'circle');
+			}, 300);
+			computerMoves.push(computerId);
 		}
-	
-	} else if (computerMoves.length > 2) {
-	
-		var status = evaluateWinner(computerMoves);
-		if (status == "winner") {
-			return "computer won"; 
+
+		if (computerMoves.length > 2) {
+			var status = evaluateWinner(computerMoves);
+			if (status == "winner") {
+				return "Computer won."; 
+			}
 		}
-	
-	} else if (playerMoves.length == 5 && computerMoves.length == 4) {
-		return "tie!"
+
 	}
 
 	return "game in progress";	
 
 }
 
-
+// calculates computer's move
 var nextMove = function() {
 	
 	var computerMove;
@@ -81,42 +93,32 @@ var nextMove = function() {
 	var computerId = Math.floor( Math.random() * 9);
 
 	computerMove = computerId.toString();
-
-	// console.log(computerId);
-
-	// if (playerMoves.indexOf(computerId) == -1 && computerMoves.indexOf(computerId) == -1) {
-	// 	computerMove = computerId;
-	// } else {
-	// 	nextMove();
-	// }
 	
 	return computerMove;
 
 }
 
+// takes an input array and checks if it is the winner
+function evaluateWinner(input) {
 
-function evaluateWinner(arrayToEvaluate) {
-
-	var subArray = [],
-        result = "loser";
+ 	var result = "loser";
 	
-	arrayToEvaluate.sort();
-
-	for (var i = 0; i < arrayToEvaluate.length - 2; i++) {
-		subArray[i] = arrayToEvaluate[i] + arrayToEvaluate[i+1] + arrayToEvaluate[i+2];
-	}
-    
-    console.log(subArray);
-  
-	for (var i = 0; i < subArray.length; i++) {
-		for (var j = 0; j < winnerArray.length; j++) {
-			if (subArray[i] == winnerArray[j]) {
-				result = "winner";
-                console.log(subArray[i] + " : " + winnerArray[j]);
+	for (var i = 0; i < winnerArray.length; i++) {
+        
+        var matches = 0;
+		
+		for (var j = 0; j < winnerArray[i].length; j++) {
+          console.log(input.indexOf(winnerArray[i][j]));
+			if(input.indexOf(winnerArray[i][j]) > -1) {
+				matches++;
 			}
 		}
+
+        if (matches == 3) {
+		  result = "winner";
+	    }
 	}
-    
-    return result;
+  
+  	return result;
 
 }

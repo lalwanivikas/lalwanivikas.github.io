@@ -9,10 +9,13 @@
 body {
 	font-family: sans-serif;
 	font-weight: 300;
-	color: #fff;
 	background-color: #000;
 	max-width: 600px;
 	margin: 4% auto;
+}
+
+#resultDiv {
+	display: none;
 }
 
 h1 {
@@ -23,8 +26,15 @@ h1 {
 	margin-top: 20%;
 }
 
-#resultText {
-	display: none;
+#playAgain {
+	width: 200px;
+	cursor: pointer;
+	background-color: #fff;
+	border-radius: 5px;
+	margin: 5% auto;
+	font-size: 2rem;
+	text-align: center;
+	padding: 2%;
 }
 
 .board {
@@ -78,6 +88,16 @@ h1 {
 }
 
 @media (max-width: 540px), (max-height: 550px) {
+	
+	h1 {
+		font-size: 2rem;
+	}
+	
+	#playAgain {
+		font-size: 1.2rem;
+		width: 150px;
+	}
+
 	.board {
 	    width: 300px;
 	    height: 300px; 
