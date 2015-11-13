@@ -1,0 +1,97 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+	font-weight: 300;
+	color: #fff;
+	background-color: #000;
+	max-width: 600px;
+	margin: 4% auto;
+}
+
+h1 {
+	font-weight: 300;
+	color: #fff;
+	text-align: center;
+	font-size: 5rem;
+	margin-top: 20%;
+}
+
+#resultText {
+	display: none;
+}
+
+.board {
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+.square {
+	border: 1px solid #fff;
+	float: left;
+	width: 33.33%;
+	height: 33.33%;
+	display: inline-block;
+	margin: 0;
+	cursor: pointer;
+}
+
+.top {
+	border-top: none;
+}
+
+.left {
+	border-left: none;
+}
+
+.right {
+	border-right: none;
+}
+
+.bottom {
+	border-bottom: none;
+}
+
+.circle {
+	background: url('../img/circle.png');
+	background-repeat: no-repeat;
+	height: 128px;
+	width: 128px;
+    margin: 15%;
+    background-size: contain;
+}
+
+.cross {
+	background-image: url('../img/cross.png');
+	background-repeat: no-repeat;
+	height: 128px;
+	width: 128px;
+    margin: 15%;
+    background-size: contain;
+}
+
+@media (max-width: 540px), (max-height: 550px) {
+	.board {
+	    width: 300px;
+	    height: 300px; 
+	}
+
+	.circle {
+		height: 64px;
+		width: 64px;
+	}
+
+	.cross {
+		height: 64px;
+		width: 64px;
+	}
+}
+
+
