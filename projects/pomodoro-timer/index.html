@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Pomodoro Timer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="mode">
+		<div id="work">Work</div>
+		<div id="rest">Break</div>
+	</div>
+	
+	<div class="timer">
+		<div id="currentMode">Work</div>
+		<div id="incTime">+</div>
+		<div id="currentTime">
+			<span id="minutes">25</span>:<span id="seconds">00</span>
+		</div>
+		<div id="decTime">-</div>
+	</div>
+	
+	<div class="startReset">
+		<div id="start">Start</div>
+		<div id="reset">Reset</div>
+	</div>
+
+	<audio src="http://www.orangefreesounds.com/wp-content/uploads/2015/04/Loud-alarm-clock-sound.mp3" id="alarm" preload="auto"></audio>
+	
+	<script type="text/javascript" src="js/pomodoro.js"></script>
+</body>
+</html>

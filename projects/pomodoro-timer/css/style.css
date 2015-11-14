@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */ 
+}
+
+body {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 100%;
+	width: 300px;
+	margin: 8% auto;
+	background-color: #74AFAD;
+	color: #fff;
+	font-weight: 300;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+.mode,
+.timer,
+.startReset {
+	text-align: center;
+}
+
+.mode div,
+.timer div,
+.startReset div
+ {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.mode div,
+.startReset div {
+	width: 100px;
+	padding: 6px 10px;
+	border: 2px solid #fff;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 1.5rem;
+	margin: 10px;
+	letter-spacing: 0.1rem;
+	transition: all 0.5s ease;
+}
+
+.mode div:hover,
+.startReset div:hover {
+	color: #74AFAD;
+	background-color: #fff;
+}
+
+.timer {
+	border: 2px solid #fff;
+	border-radius: 50%;
+	width: 276px;
+	height: 226px;
+	margin: 5% auto;
+	padding-top: 50px;
+}
+
+
+#currentMode {
+	display: block;
+	cursor: auto;
+	font-size: 3rem;
+}
+
+#currentTime {
+	cursor: auto;
+	font-size: 4rem;
+	vertical-align: middle;
+}
+
+#incTime,
+#decTime {
+	font-size: 2rem;
+	vertical-align: middle;
+}
+
+
+
