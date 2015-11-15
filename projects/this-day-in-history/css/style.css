@@ -1,0 +1,37 @@
+body {
+	font-family: 'Merriweather', serif;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+h1 {
+	font-weight: 300;
+	text-align: center;
+}
+
+h2#currentDay {
+	background-color: #FFEB3B;
+    padding: 2%;
+    margin: 4% -15px 6%;
+    font-weight: 400;
+    text-align: center;
+}
+
+h3 {
+	border-bottom: 1px solid;
+    display: inline-block;
+    margin-bottom: 0%;
+}
+
+ul#content {
+	padding: 0px 2%;
+    margin: 2% 0;
+}
+
+ul#content li {
+	margin: 5% 0;
+	font-size: 1.1rem;
+    letter-spacing: 0.01rem;
+    line-height: 1.5rem;
+}
