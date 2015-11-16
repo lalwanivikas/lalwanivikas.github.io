@@ -1,0 +1,97 @@
+body {
+	font-family: 'Merriweather', serif;
+	font-size: 100%;
+	width: 300px;
+	margin: 2% auto;
+	background-color: snow;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */ 
+}
+
+h1 {
+	font-size: 1.8rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+canvas {
+	border-bottom: 4px solid #607D8B;
+	margin: 5% auto;
+}
+
+.testWord {
+	margin: 5% auto 10%;
+	text-align: center;
+}
+
+.testWord div {
+	display: inline-block;
+	width: 20px;
+	height: 25px;
+	font-size: 1.2rem;
+	text-align: center;
+	border-bottom: 2px solid #000;
+	padding-bottom: 1%;
+	margin: 2px;
+	vertical-align: bottom;
+	color: #4CAF50;
+}
+
+.keyboard {
+	margin: 5% auto;
+}
+
+.keyboard div {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.keyboard div div {
+	display: inline-block;
+	width: 20px;
+	padding: 8px;
+	margin: 5px auto;
+	text-align: center;
+	border: 1px solid #000;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	font-weight: 300;
+	font-size: 1.2rem;
+}
+
+.keyboard div div:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.gameOver,
+.youWon {
+	display: none;
+	position: absolute;
+	top: 20%;
+	margin: 0 auto;
+	width: 300px;
+	padding: 20px 0;
+	border: 1px solid #bbb;
+	text-align: center;
+	background-color: #eee;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+
+.gameOver h2, h3,
+.youWon h3 {
+	font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
