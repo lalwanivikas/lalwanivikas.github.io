@@ -2,10 +2,12 @@
 layout: default
 ---
 
-<h1>List of projects</h1>
+<h2>List of projects</h2>
 
-{% for post in site.posts %}
-<li>
-  <span>Day {{post.day}}: </span><a href="{{ post.url }}">{{ post.title }}</a>
-</li>
-{% endfor %}
+<ul>
+	{% for post in site.posts %}
+	<li>
+	  <span>Day {{post.day}}: </span><a href="{{ post.url }}">{{ post.title }}</a>
+	</li>
+	{% endfor %}
+</ul>

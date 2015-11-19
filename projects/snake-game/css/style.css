@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: snow;
+	font-family: sans-serif;
+	font-size: 100%;
+	width: 960px;
+	margin: 40px auto;
+}
+
+.game {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.home {
+	text-align: center;
+}
+
+canvas {
+	background-color: #000;
+}
+
+button {
+	background-color: #FF5722;
+	display: block;
+	margin: 10px auto; 
+	color: white;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 1.5rem;
+	width: 150px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+button:hover {
+	background-color: orange;
+}
+
+button:disabled {
+	background-color: #ddd;
+}
