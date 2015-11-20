@@ -1,3 +1,4 @@
+// fills one rectangle(square)
 var bodySnake = function(x, y) {
 	ctx.fillStyle = '#0F0';
 	ctx.fillRect(x*snakeSize, y*snakeSize, snakeSize, snakeSize);
