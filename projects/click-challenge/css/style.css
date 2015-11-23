@@ -52,10 +52,7 @@ body {
 
 #result {
 	display: none;
-}
-
-#result h1 {
-	font-size: 7rem;
+	font-size: 5rem;
 	font-weight: 300;
 }
 

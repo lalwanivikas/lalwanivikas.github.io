@@ -24,7 +24,7 @@ var fillTank = setInterval( function(){
 		var totalClicks = count * 2 / 60;
 		totalClicks = totalClicks.toFixed(2);
 
-		result.innerHTML = "Your click speed is " + totalClicks + " clicks/seconds.";
+		result.innerHTML = "Your click speed is " + totalClicks + " clicks/second.";
 
 	}
 
