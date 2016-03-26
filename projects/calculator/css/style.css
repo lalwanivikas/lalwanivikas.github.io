@@ -28,6 +28,10 @@ body {
 	border: 1px solid #CFD8DC;
 	border-radius: 3px;
 	background-color: #ECEFF1;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .row div:hover {
