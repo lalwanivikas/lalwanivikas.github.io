@@ -31,6 +31,8 @@ rootRef.on('child_added', function(snapshot) {
 
 function displayChatMessage(name, text) {
 	var incomingMessage = document.createElement('p');
+	name = name.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+	text = text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 	incomingMessage.innerHTML = '<b>' + name + ": " + '</b>' + text;
 	displayDiv.appendChild(incomingMessage);
 	messageInput.value = "";
