@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Maths Quiz</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- progress bar -->
+    <div class="progress-bar">
+      <div id="status"></div>
+    </div>
+
+    <!-- question div -->
+    <div id="question">5 x 8</div>
+
+    <!-- answer div -->
+    <div id="answer">15</div>
+
+    <!-- icons for tick and cross -->
+    <div class="right-wrong">
+      <img id="0" src="img/cancel.svg">
+      <img id="1" src="img/checked.svg">
+    </div>
+
+  </div>
+
+  <!-- score div -->
+  <div class="score-container">
+    Score: <span id="score">0</span>
+  </div>
+
+  <!-- Result/Exit Screen -->
+  <div class="container final-screen">
+    <div>GAME OVER</div>
+    <div>Final score: <b><span id="finalScore">20</span></b></div>
+    <div id="play-again">Play Again</div>
+  </div>
+
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

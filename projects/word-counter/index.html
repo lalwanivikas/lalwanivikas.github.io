@@ -2,12 +2,20 @@
 <html>
 <head>
 	<title>Word Counter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<textarea id="input"></textarea>
-	<button id="countButton">count</button>
-	<div id="output"></div>
-
+	<textarea></textarea>
+	<div class="output">
+		<div>Characters: <span id="characterCount">0</span></div>
+		<div>Words: <span id="wordCount">0</span></div>
+		<div>Sentences: <span id="sentenceCount">0</span></div>
+		<div>Paragraphs: <span id="paragraphCount">0</span></div>
+	</div>
+	<div>
+		<button>Reading Level</button>
+		<div>Reading Level: <span id="readingLevel">N/A</span></div>
+	</div>
 	<script type="text/javascript" src="js/word-counter.js"></script>
 </body>
 </html>
