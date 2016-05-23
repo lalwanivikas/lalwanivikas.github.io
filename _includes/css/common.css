@@ -18,16 +18,16 @@ p {
 }
 
 ul {
-	padding: 0px 2%;
-    margin: 5% 0;
+	padding: 0 2%;
+  margin: 2% 0 5%;
 }
 
 ul li {
-	margin: 2% 0;
+	margin: 1% 0;
 	font-size: 1.1rem;
-    letter-spacing: 0.01rem;
-    line-height: 1.5rem;
-    line-height: 1.8rem;
+  letter-spacing: 0.01rem;
+  line-height: 1.5rem;
+  line-height: 1.8rem;
 }
 
 
