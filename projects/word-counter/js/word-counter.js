@@ -34,11 +34,11 @@ input.addEventListener('keyup', function() {
   characterCount.innerHTML = input.value.length;
   
 
-  // word count using \w metacharacter
+  // word count using \w metacharacter - replacing this with .* to match anything between word boundaries since it was not taking 'a' as a word.
   // this is a masterstroke - to count words with any number of hyphens as one word
   // [-?(\w+)?]+ looks for hyphen and a word (we make both optional with ?). + at the end makes it a repeated pattern
   // \b is word boundary metacharacter
-  var words = input.value.match(/\b\w+[-?(\w+)?]+\b/gi);
+  var words = input.value.match(/\b\.*[-?(\w+)?]+\b/gi);
   // console.log(words);
   if (words) {
     wordCount.innerHTML = words.length;
