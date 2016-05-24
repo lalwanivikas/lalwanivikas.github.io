@@ -107,7 +107,7 @@ input.addEventListener('keyup', function() {
     for (var i = 0; i < words.length; i++) {
       // filtering out stop words and numbers
       if (stopWords.indexOf(words[i].toLowerCase()) === -1 && isNaN(words[i])) {
-        wordsWithoutStopWords.push(words[i]);
+        wordsWithoutStopWords.push(words[i].toLowerCase());
       }
     }
     // console.log(wordsWithoutStopWords);
