@@ -1,23 +1,25 @@
-<nav>
-	<ul>
-		<li>
-			<a class='{% if page.url == "/index.html" %}current{% endif %}' href="{{site.baseurl}}/index.html">Home</a>
-		</li>
-		
-		<!-- <li>
-			<a class='{% if page.url == "/about.html" %}current{% endif %}' href="{{site.baseurl}}/about.html">About</a>
-		</li> -->
-		
-		<li>
-			<a class='{% if page.url contains "projects" %}current{% endif %}' href="{{site.baseurl}}/projects/">Projects</a>
-		</li>
+<ul>
+	<li>
+		<a class='{% if page.url == "/" %}current{% endif %}' href="{{site.baseurl}}/index.html">Home</a>
+	</li>
+	
+	<li>
+		<a class='{% if page.url == "/about.html" %}current{% endif %}' href="{{site.baseurl}}/about.html">About</a>
+	</li>
+	
+	<li>
+		<a class='{% if page.url contains "projects" %}current{% endif %}' href="{{site.baseurl}}/projects/">Projects</a>
+	</li>
+	
+	<li>
+		<a class='{% if page.url == "/writing.html" %}current{% endif %}' href="{{site.baseurl}}/writing.html">Writing</a>
+	</li>
 
-		<!-- <li>
-			<a class='{% if page.url contains "blog" %}current{% endif %}' href="{{site.baseurl}}/blog/">Blog</a>
-		</li> -->		
-		
-		<li>
-			<a class='{% if page.url == "/contact.html" %}current{% endif %}' href="{{site.baseurl}}/contact.html">Contact</a>
-		</li>
-	</ul>
-</nav>
+	<li>
+		<a class='{% if page.url contains "blog" %}current{% endif %}' href="{{site.baseurl}}/blog/">Blog</a>
+	</li>		
+	
+	<li>
+		<a class='{% if page.url == "/contact.html" %}current{% endif %}' href="{{site.baseurl}}/contact.html">Contact</a>
+	</li>
+</ul>

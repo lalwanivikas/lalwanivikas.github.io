@@ -6,7 +6,7 @@ day: 12
 
 I woke up today and saw a tweet in which somebody mentioned that he made tic-tac-toe game. I tested it out and it worked pretty well. So I thought of giving it a try and so today's project is tic-tac-toe game.
 
-You can try it here [http://vikaslalwani.com/projects/tic-tac-toe/](http://vikaslalwani.com/projects/tic-tac-toe/).
+You can [try it here](http://vikaslalwani.com/projects/tic-tac-toe/).
 
 Key Points:
 ---

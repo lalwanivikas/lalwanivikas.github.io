@@ -6,7 +6,7 @@ day: 10
 
 Today's project is both interesting and useful - bar locator. It will track your current location (if you allow it to) and then suggest nearest bars that are open at the moment.
 
-You can test it out here: [http://vikaslalwani.com/projects/bar-locator/](http://vikaslalwani.com/projects/bar-locator/).
+You can [test it out here](http://vikaslalwani.com/projects/bar-locator/).
 
 Key Points:
 ---

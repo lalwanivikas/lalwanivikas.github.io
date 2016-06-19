@@ -12,7 +12,7 @@ Let's continue the naming convention and call it Day 24 project.
 
 It is a maths quiz app which generates a random question & answer. You have to choose whether the displayed answer is correct or not before the time runs out. You lose if you choose an incorrect answer or if the time runs out. 
 
-Simple, right? Then give it a go here: [http://vikaslalwani.com/projects/maths-quiz/](http://vikaslalwani.com/projects/maths-quiz/).
+Simple, right? Then [give it a go here](http://vikaslalwani.com/projects/maths-quiz/).
 
 More about the app:
 ---

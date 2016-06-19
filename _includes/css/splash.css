@@ -1,0 +1,208 @@
+/* 
+	**** Reset CSS ****
+	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+	*********************
+	*** Common Styles ***
+	*** for splash page **
+	*********************
+*/
+
+@font-face {
+  font-family: 'Avenir Light';
+  src: url("/fonts/avenir-light-f7727b07.woff2") format("woff2"), url("/fonts/avenir-light-7b05f688.woff") format("woff"),url("/fonts/avenir-light-395f4283.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal
+}
+
+html {
+	background: #4b6cb7; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #4b6cb7 , #182848); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #4b6cb7 , #182848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-family: 'Avenir Light', sans-serif;
+	font-size: 100%;
+	font-weight: 300;
+	letter-spacing: .1rem;
+	line-height: 1.2;
+	color: #fff;
+}
+
+.container {
+	position: relative;
+	z-index: 0;
+	padding-left: 2rem;
+	width: 100%;
+}
+
+.heading {
+	position: relative;
+	top: 32vh;
+}
+
+li a {
+	text-decoration: none;
+	color: #268bd2;
+	padding: 5px 2px;
+	border-bottom: 1px solid #268bd2;
+}
+
+li a:hover {
+	background: rgba(75%, 75%, 75%, .25);
+	border-bottom-width: 3px;
+	margin-bottom: -2px;
+}
+
+h1 {
+	font-size: 5.5rem;
+	font-weight: 300;
+	letter-spacing: .5rem;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 2.17rem;
+	font-weight: 300;
+	margin-top: 0;
+}
+
+.toggle {
+	text-decoration: none;
+	font-size: 3rem;
+	color: #FFF;
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+	z-index: 1;
+	cursor: pointer;
+	transition: all .25s ease-out;
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: -20rem;
+	width: 15rem;
+	padding: 2.4rem;
+	background: #333;
+	z-index: 0;
+	transition: all .25s ease-out;
+}
+
+.sidebar  ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.sidebar  ul li {
+	margin-bottom: 2rem;
+}
+
+.sidebar  li a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+	font-size: 1.6rem;
+}
+
+.sidebar  li a:hover {
+	color: rgba(255, 255, 255, 1);	
+}
+
+#sidebartoggler {
+	display: none;
+}
+
+#sidebartoggler:checked + .page-wrap .sidebar {
+	right: 0px;
+}
+
+#sidebartoggler:checked + .page-wrap .toggle {
+	right: 16rem;
+}
+
+/* 
+** Making it responsive
+*/
+
+@media (max-width: 600px) {
+	
+	.container {
+		padding-left: 1rem;
+	}
+
+	.heading {
+		top: 35vh;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+	
+	/* for hamburger menu */
+	.toggle {
+		font-size: 2rem;
+		top: 1rem;
+	}
+
+}

@@ -6,7 +6,7 @@ day: 15
 
 It's a relatively straightforward project today - the famous 'This Day in History' clone. If you open the page it will tell you all the historical events that happened on this day.
 
-You can test is out here: [http://vikaslalwani.com/projects/this-day-in-history/](http://vikaslalwani.com/projects/this-day-in-history/).
+You can [test is out here](http://vikaslalwani.com/projects/this-day-in-history/).
 
 Key Points:
 ---

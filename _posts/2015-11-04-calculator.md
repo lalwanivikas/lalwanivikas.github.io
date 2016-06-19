@@ -6,7 +6,7 @@ day: 4
 
 I am happy with what I made today. A calculator. Yes, a calculator that just works. No need to take care of what you enter in it, just enter whatever you can and it will show you the correct answer to your query.
 
-You can try it here: [http://vikaslalwani.com/projects/calculator/](http://vikaslalwani.com/projects/calculator/).
+You can [try it here](http://vikaslalwani.com/projects/calculator/).
 
 Yesterday's project was also similar one, but it had tons of limitations. You could only do one type of operation in it. And even then it had couple of irritating bugs.
 

@@ -6,7 +6,7 @@ day: 13
 
 I spent some time today fixing the logic of tit-tac-toe game that I made yesterday. Now that it works flawlessly, I am feeling proud :) It was a good challenge.
 
-Today I made a little easier project - random quote generator. You can try it here: [http://vikaslalwani.com/projects/quote-generator/](http://vikaslalwani.com/projects/quote-generator/).
+Today I made a little easier project - random quote generator. You can [try it here](http://vikaslalwani.com/projects/quote-generator/).
 
 I like collecting great quotes and this is something I wanted to make for a long time. I am happy that it turned out good!
 

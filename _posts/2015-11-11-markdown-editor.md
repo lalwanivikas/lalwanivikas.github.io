@@ -6,7 +6,7 @@ day: 11
 
 It's wrong to call today's project 'Markdown Editor' as it can't even do 5% of what a real markdown editor does. I write these posts daily in markdown format so I thought that making a markdown editor would be a great idea without realising how complex it is. 
 
-You can try the 5% version here: [http://vikaslalwani.com/projects/markdown-editor/](http://vikaslalwani.com/projects/markdown-editor/). 
+You can try the 5% version [here](http://vikaslalwani.com/projects/markdown-editor/). 
 
 Now I have special respect for the guys who have successfully built similar stuff. After thinking about the problem the max I could achieve was the ability to convert headlines and paragraphs from markdown to HTML. And that too with restrictions. This project was way over my current abilities. And just not possible to do in a single day.
 

@@ -13,6 +13,6 @@ Here are the things I did today:
 - Purchased a personal domain name
 - Setup this Jekyll site from scratch
 
-My earlier home page was a very simple one with just a list of projects. I have moved it to [http://lalwanivikas.github.io/home-page-v1/](http://lalwanivikas.github.io/home-page-v1/) now. My new site will have separate sections for projects, about, contact and a blog.
+My earlier home page was a very simple one with just a list of projects. I have moved it to [here now](http://lalwanivikas.github.io/home-page-v1/). My new site will have separate sections for projects, about, contact and a blog.
 
 There is close to zero CSS in this site now and I intend to revisit it later to make it beautiful :)

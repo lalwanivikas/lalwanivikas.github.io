@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 	<meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{page.meta}}">
-  <title>{{page.title}}</title>
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.css">
+  <meta name="description" content="Full stack developer in the making. Also an occasional writer.">
+  <title>Vikas Lalwani</title>
+	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/splash.css">
 </head>
-
 <body>
 	
 	<input type="checkbox" id="sidebartoggler">
+	
 	<div class="page-wrap">
 		
 		<label for="sidebartoggler" class="toggle">☰</label>
 
-		{{content}}
+		<div class="container">
+			<div class="heading">
+				<h1>VIKAS LALWANI</h1>
+				<h2>JavaScript developer and occasional writer.</h2>
+			</div>
+		</div>
 		
 		<div class="sidebar">
 			{% include nav.html %}
@@ -30,5 +32,4 @@
 	{% include ga.html %}
 
 </body>
-
 </html>

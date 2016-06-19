@@ -6,7 +6,7 @@ day: 16
 
 A very satisfying project today - hangman game! We used to play this a lot when I was a kid and coding it today felt great. I gave it a twist by allowing words only related to JavaScript instead of general vocabulary. 
 
-If you are into JavaScript, you will enjoy playing it: [http://vikaslalwani.com/projects/hangman/](http://vikaslalwani.com/projects/hangman/). 
+If you are into JavaScript, you will [enjoy playing it](http://vikaslalwani.com/projects/hangman/). 
 
 Key Points:
 ---

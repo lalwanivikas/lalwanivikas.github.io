@@ -8,6 +8,6 @@ If you use Google Chrome, you must have noticed that there is a game hidden insi
 
 Today I tried to recreate that game in its very basic form.
 
-Nothing fancy, but it works: [http://vikaslalwani.com/projects/square-jump/](http://vikaslalwani.com/projects/square-jump/).
+Nothing fancy, but [it works](http://vikaslalwani.com/projects/square-jump/).
 
 The original game looks very simple from the outside but once you actually try to recreate it you realise that it has lots of hidden complexities. But it was fun making it work. Things learned from past couple of games came in very handy today. Since there was not much new in this game, are no new 'Key Points' today.

@@ -1,11 +1,26 @@
 ---
 layout: default
+meta: Blog by Vikas Lalwani | JavaScript developer and  occasional writer.
+title: Blog | Vikas Lalwani
 ---
 
-<h1>Recent Posts</h1>
+<div class="wrapper">
+	
+	<header>
+		<h1>BLOG</h1>
+		<p>Mostly contains small writeups about my projects.</p>
+	</header>
+	
+	<div class="blog-list">
+		
+		{% for post in site.posts %}
+		<a href="{{ post.url }}">
+		  {{ post.title }}
+		  <span class="post-date">{{ post.date | date_to_long_string }}</span>
+		</a>
+		<hr>
+		{% endfor %}
+	
+	</div>
 
-{% for post in site.posts %}
-<li>
-  <span>Day {{post.day}}: </span><a href="{{ post.url }}">{{ post.title }}</a>
-</li>
-{% endfor %}
+</div>

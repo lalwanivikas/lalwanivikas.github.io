@@ -10,7 +10,7 @@ Today's task was to make a basic calculator in HTML/CSS/JS. It looks very easy f
 
 In its current shape you can enter only a string consisting of one type of operator to get the correct result.
 
-You can try the app here: [http://vikaslalwani.com/projects/toy-calculator/](http://vikaslalwani.com/projects/toy-calculator/).
+You can [try the app here](http://vikaslalwani.com/projects/toy-calculator/).
 
 Key Points
 ---

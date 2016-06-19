@@ -1,47 +1,422 @@
-body {
-	font-family: 'Merriweather', serif;
+/* 
+	**** Reset CSS ****
+	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
 	font-size: 100%;
-	font-weight: 300;
-	max-width: 700px;
-	margin: 0 auto;
-	padding: 15px;
-	background-color: snow;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-a {
-	color: #2196F3;
+/*
+	*********************
+	*** Common Styles ***
+	*** for every page **
+	*********************
+*/
+
+@font-face {
+  font-family: 'Avenir Light';
+  src: url("/fonts/avenir-light-f7727b07.woff2") format("woff2"), url("/fonts/avenir-light-7b05f688.woff") format("woff"),url("/fonts/avenir-light-395f4283.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-family: 'Avenir Light', sans-serif;
+	font-size: 100%;
+	letter-spacing: .1rem;
+	line-height: 1.4;
+	color: #444;
+	background-color: #F6F6EF;
+}
+
+.wrapper {
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	max-width: 700px;
+	margin: 1% 4% 2%;
+	padding: 1rem;
+}
+
+header {
+	padding: 1rem 1.5rem;
+}
+
+header h1 {
+	font-size: 4rem;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 2.5rem;
+	margin: 4rem 0 1rem;
+}	
 
 p {
-	font-size: 1.1rem;
-	line-height: 1.8rem;
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+	line-height: 1.8;
+	letter-spacing: .08rem;
+}
+
+p a {
+	text-decoration: none;
+	color: #268bd2;
+	padding: 5px 2px;
+	border-bottom: 1px solid #268bd2;
+}
+
+p a:hover {
+	background: rgba(75%, 75%, 75%, .25);
+	border-bottom-width: 3px;
+	margin-bottom: -2px;
 }
 
 ul {
-	padding: 0 2%;
-  margin: 2% 0 5%;
+	margin-bottom: 2rem;
+	font-size: 1.2rem;
+	line-height: 1.8;
+	letter-spacing: .08rem;
+	list-style-position: inside;
+	padding-left: 1rem;
+	list-style: disc;
 }
 
-ul li {
-	margin: 1% 0;
-	font-size: 1.1rem;
-  letter-spacing: 0.01rem;
-  line-height: 1.5rem;
-  line-height: 1.8rem;
+li ul {
+	list-style: circle;	
+}
+
+li a {
+	text-decoration: none;
+	color: #268bd2;
+	padding: 5px 2px;
+	border-bottom: 1px solid #268bd2;
+}
+
+li a:hover {
+	background: rgba(75%, 75%, 75%, .25);
+	border-bottom-width: 3px;
+	margin-bottom: -2px;
+}
+
+hr {
+	border: 0;
+  height: 1px;
+  background: #bbb;
+  margin: 1rem 0;
+}
+
+/*
+	*********************
+	*** Custom Styles ***
+	*** for About page **
+	*********************
+*/
+
+.about {
+	padding: 1rem 1.5rem;
+}
+
+.about p span {
+	color: #268bd2;
+	font-weight: 900;
+	font-style: italic;
 }
 
 
-nav ul {
-	padding: 0;
+/*
+	*********************
+	*** Custom Styles ***
+	* for writing page **
+	*********************
+*/
+
+.site-div {
+	margin-bottom: 10%;
 }
 
-nav ul li {
-	list-style: none;
+.site-div h2 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	padding: 1rem 1.5rem;
+	margin: 0;
+}
+
+a.article-details {
+	text-decoration: none;
+	color: #333;
+	display: block;
+	padding: 1rem;
+	margin-bottom: 2rem;
+	border-left: .5rem solid #a3cfee;
+	transition: all .25s ease-out;
+}
+
+a.article-details:hover {
+	background-color: #058DC7;
+	color: #FFF;
+	border-left: .5rem solid #a3cfee;
+}
+
+a.article-details h3 {
+	font-size: 1.8rem;
+}
+
+a.article-details span {
 	display: inline-block;
-	font-size: 1.3rem;
-	padding-right: 10px;
+	color: #ED4E1B;
+	margin: 2% 0;
+	transition: color .25s ease-out;
 }
 
-.current {
-	background-color: yellow;
+a.article-details:hover span {
+	color: #a3cfee;
+}
+
+a.article-details .date::before {
+	content: "·";
+  padding-right: 0.5rem;
+}
+
+hr.writing {
+  margin: 2rem 1rem 3rem;
+}
+
+/*
+	*********************
+	*** Custom Styles ***
+	**** Blog page ******
+	*********************
+*/
+
+.blog-list {
+	padding: .5rem;
+}
+
+.blog-list a {
+	text-decoration: none;
+	color: #333;
+	font-size: 1.8rem;
+	display: block;
+	padding: 1rem;
+	border-left: .5rem solid #a3cfee;
+	transition: all .25s ease-out;
+}
+
+.blog-list a:hover {
+	background-color: #058DC7;
+	color: #FFF;
+	border-left: .5rem solid #a3cfee;
+}
+
+.blog-list a span {
+	display: block;
+	color: #ED4E1B;
+	font-size: 1rem;
+	margin: 2% 0;
+	transition: color .25s ease-out;
+}
+
+.blog-list a:hover span {
+	color: #a3cfee;
+}
+
+/*
+	*********************
+	*** Custom Styles ***
+	* for projects page *
+	*********************
+*/
+
+p.description {
+	margin: 1rem 0 0.5rem;
+}
+
+/*
+	*********************
+	*** Common Styles ***
+	** Navigation menu **
+	*********************
+*/
+
+.toggle {
+	text-decoration: none;
+	font-size: 3rem;
+	color: #444;
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+	z-index: 1;
+	cursor: pointer;
+	transition: all .25s ease-out;
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: -20rem;
+	width: 15rem;
+	padding: 2.4rem;
+	background: #333;
+	z-index: 0;
+	transition: all .25s ease-out;
+}
+
+.sidebar  ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.sidebar  ul li {
+	margin-bottom: 1rem;
+}
+
+.sidebar  li a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+	font-size: 1.6rem;
+}
+
+.sidebar  li a:hover {
+	color: rgba(255, 255, 255, 1);	
+}
+
+#sidebartoggler {
+	display: none;
+}
+
+#sidebartoggler:checked + .page-wrap .sidebar {
+	right: 0px;
+}
+
+#sidebartoggler:checked + .page-wrap .toggle {
+	right: 16rem;
+}
+
+/* 
+** Making it responsive
+*/
+
+
+@media (max-width: 600px) {
+	
+	header h1 {
+		font-size: 3rem;
+	}	
+	
+	/* customizing tech used and date for guest posts */
+	a.article-details span {
+		display: block;
+	}
+	a.article-details .date::before {
+		content: "";
+	  padding-right: 0;
+	}
+	
+	/* for hamburger menu */
+	.wrapper {
+		width: 100%;
+		margin: 1% 0% 2%;
+    padding: 1.8rem 0 0 0; 
+	}
+
+	.toggle {
+		font-size: 2rem;
+		top: 1rem;
+		right: 2rem;
+	}
+
+	/* Blog */
+	.blog-list {
+    padding: 0;
+	}
+
+}
+
+@media (max-width: 500px) {
+	
+	header h1 {
+		font-size: 2.5rem;
+	}	
+	
+	/* customizing tech used and date for guest posts */
+	a.article-details span {
+		display: block;
+	}
+	a.article-details .date::before {
+		content: "";
+	  padding-right: 0;
+	}
+	
+	/* for hamburger menu */
+	.wrapper {
+		width: 100%;
+		margin: 1% 0% 2%;
+    padding: 1.8rem 0 0 0; 
+	}
+
+	.toggle {
+		font-size: 2rem;
+		top: 1rem;
+		right: 2rem;
+	}
+
+	/* Blog */
+	.blog-list {
+    padding: 0;
+	}
+
 }

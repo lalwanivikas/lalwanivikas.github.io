@@ -6,9 +6,7 @@ day: 9
 
 I found last couple of projects little easier to handle, so today I decided to take up something that was borderline impossible to finish. But in the end it also turned out to be not so complex. Possibly because I found the right resources/tools to get going.
 
-You can not see the today's project in action unless you download/install it yourself on your machine. If you are interested you can do so from this repo:
-
-[https://github.com/lalwanivikas/lalwanivikas.github.io/tree/master/projects/live-scores](https://github.com/lalwanivikas/lalwanivikas.github.io/tree/master/projects/live-scores).
+You can not see the today's project in action unless you download/install it yourself on your machine. If you are interested you can do so from [this repo](https://github.com/lalwanivikas/lalwanivikas.github.io/tree/master/projects/live-scores).
 
 Once you have downloaded:
 
