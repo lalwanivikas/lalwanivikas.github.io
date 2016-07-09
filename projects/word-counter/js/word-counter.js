@@ -51,7 +51,7 @@ input.addEventListener('keyup', function() {
   if (words) {
     var sentences = input.value.split(/[.|!|?]+/g);
     console.log(sentences);
-    sentenceCount.innerHTML = sentences.length;
+    sentenceCount.innerHTML = sentences.length - 1;
   } else {
     sentenceCount.innerHTML = 0;
   }
