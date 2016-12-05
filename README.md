@@ -1,2 +1,2 @@
-# lalwanivikas.github.io
-new site
+# Personal website
+##[GO](http://vikaslalwani.com/about.html)
