@@ -1,6 +1,6 @@
-/* 
+/*
 	**** Reset CSS ****
-	http://meyerweb.com/eric/tools/css/reset/ 
+	http://meyerweb.com/eric/tools/css/reset/
 	v2.0 | 20110126
 	License: none (public domain)
 */
@@ -14,8 +14,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -26,7 +26,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -102,7 +102,7 @@ header h1 {
 h2 {
 	font-size: 2.5rem;
 	margin: 4rem 0 1rem;
-}	
+}
 
 p {
 	font-size: 1.2rem;
@@ -119,7 +119,7 @@ p a {
 }
 
 p a:hover {
-	background: rgba(75%, 75%, 75%, .25);
+	background: rgba(75%, 75%, 75%, .4);
 	border-bottom-width: 3px;
 	margin-bottom: -2px;
 }
@@ -130,12 +130,11 @@ ul {
 	line-height: 1.8;
 	letter-spacing: .08rem;
 	list-style-position: inside;
-	padding-left: 1rem;
 	list-style: disc;
 }
 
 li ul {
-	list-style: circle;	
+	list-style: circle;
 }
 
 li a {
@@ -169,12 +168,11 @@ hr {
 	padding: 1rem 1.5rem;
 }
 
-.about p span {
-	color: #268bd2;
-	font-weight: 900;
-	font-style: italic;
+.blue-italics {
+  color: #268bd2;
+  font-weight: 900;
+  font-style: italic;
 }
-
 
 /*
 	*********************
@@ -331,7 +329,7 @@ p.description {
 }
 
 .sidebar  li a:hover {
-	color: rgba(255, 255, 255, 1);	
+	color: rgba(255, 255, 255, 1);
 }
 
 #sidebartoggler {
@@ -346,17 +344,17 @@ p.description {
 	right: 16rem;
 }
 
-/* 
+/*
 ** Making it responsive
 */
 
 
 @media (max-width: 600px) {
-	
+
 	header h1 {
 		font-size: 3rem;
-	}	
-	
+	}
+
 	/* customizing tech used and date for guest posts */
 	a.article-details span {
 		display: block;
@@ -365,12 +363,12 @@ p.description {
 		content: "";
 	  padding-right: 0;
 	}
-	
+
 	/* for hamburger menu */
 	.wrapper {
 		width: 100%;
 		margin: 1% 0% 2%;
-    padding: 1.8rem 0 0 0; 
+    padding: 1.8rem 0 0 0;
 	}
 
 	.toggle {
@@ -387,11 +385,11 @@ p.description {
 }
 
 @media (max-width: 500px) {
-	
+
 	header h1 {
 		font-size: 2.5rem;
-	}	
-	
+	}
+
 	/* customizing tech used and date for guest posts */
 	a.article-details span {
 		display: block;
@@ -400,12 +398,12 @@ p.description {
 		content: "";
 	  padding-right: 0;
 	}
-	
+
 	/* for hamburger menu */
 	.wrapper {
 		width: 100%;
 		margin: 1% 0% 2%;
-    padding: 1.8rem 0 0 0; 
+    padding: 1.8rem 0 0 0;
 	}
 
 	.toggle {
