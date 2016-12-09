@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script type="text/javascript">
+    var host = "vikaslalwani.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+      window.location.protocol = "https";
+  </script>
 	<meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="JavaScript developer and occasional writer.">
   <title>Vikas Lalwani</title>
+  <link rel="canonical" href=" {{ site.url }}{{ page.url }}" />
 	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/splash.css">
 </head>
 <body>
