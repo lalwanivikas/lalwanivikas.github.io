@@ -1,6 +1,6 @@
-/* 
+/*
 	**** Reset CSS ****
-	http://meyerweb.com/eric/tools/css/reset/ 
+	http://meyerweb.com/eric/tools/css/reset/
 	v2.0 | 20110126
 	License: none (public domain)
 */
@@ -14,8 +14,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -26,7 +26,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -63,11 +63,14 @@ table {
   font-style: normal
 }
 
+
 html {
-	background: #4b6cb7; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #4b6cb7 , #182848); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #4b6cb7 , #182848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	box-sizing: border-box;
+  background: url('https://raw.githubusercontent.com/lalwanivikas/assets/master/home-page-bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
@@ -81,7 +84,7 @@ body {
 	font-weight: 300;
 	letter-spacing: .1rem;
 	line-height: 1.2;
-	color: #fff;
+	color: #FFF;
 }
 
 .container {
@@ -93,7 +96,28 @@ body {
 
 .heading {
 	position: relative;
-	top: 32vh;
+	top: 40vh;
+}
+
+/*.home-page-links {
+  margin-top: 1em;
+}*/
+
+.home-page-links a {
+  display: inline-block;
+  color: #FFF;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 5px 2px;
+  margin: .4em;
+  margin-left: 0;
+  border-bottom: 1px solid #268bd2;
+}
+
+.home-page-links a:hover {
+  background: rgba(75%, 75%, 75%, .25);
+  border-bottom-width: 3px;
+  margin-bottom: -2px;
 }
 
 li a {
@@ -141,7 +165,7 @@ h2 {
 	right: -20rem;
 	width: 15rem;
 	padding: 2.4rem;
-	background: #333;
+  background: #01061C;
 	z-index: 0;
 	transition: all .25s ease-out;
 }
@@ -162,7 +186,7 @@ h2 {
 }
 
 .sidebar  li a:hover {
-	color: rgba(255, 255, 255, 1);	
+	color: rgba(255, 255, 255, 1);
 }
 
 #sidebartoggler {
@@ -177,18 +201,18 @@ h2 {
 	right: 16rem;
 }
 
-/* 
+/*
 ** Making it responsive
 */
 
 @media (max-width: 600px) {
-	
+
 	.container {
 		padding-left: 1rem;
 	}
 
 	.heading {
-		top: 35vh;
+		top: 30vh;
 	}
 
 	h1 {
@@ -198,7 +222,7 @@ h2 {
 	h2 {
 		font-size: 1.5rem;
 	}
-	
+
 	/* for hamburger menu */
 	.toggle {
 		font-size: 2rem;
