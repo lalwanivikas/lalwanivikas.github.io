@@ -1,0 +1,21 @@
+body { padding-top: 50px; }
+
+.bottom0 {margin-bottom: 0;}
+.bottom5 { margin-bottom:5px;}
+.bottom10 { margin-bottom:10px;}
+.bottom15 { margin-bottom:15px;}
+.bottom30 { margin-bottom:30px;}
+
+.top0 {margin-top: 0;}
+
+.padding-left-0 {padding-left: 0;}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.42;
+  border-radius: 15px;
+}

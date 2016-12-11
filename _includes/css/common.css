@@ -360,7 +360,7 @@ hr.writing {
 	right: -20rem;
 	width: 15rem;
 	padding: 2.4rem;
-	background: #333;
+  background: #01061C;
 	z-index: 0;
 	transition: all .25s ease-out;
 }

@@ -1,2 +1,2 @@
 # Personal website
-##[GO](http://vikaslalwani.com/about.html)
+##[GO](https://vikaslalwani.com)

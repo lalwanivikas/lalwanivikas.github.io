@@ -1,0 +1,31 @@
+<div class="container col-md-10 padding-left-0">
+
+  <div class="page-header bottom30">
+    <h2>User database</h2>
+  </div>
+
+  <div class="table-responsive">
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Primary Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="user in getUsers()">
+        <th scope="row">{{ $index + 1 }}</th>
+        <td>{{ user.name }}</td>
+        <td>{{ user.gender }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.addresses[0].number + ", " + user.addresses[0].street + ", " + user.addresses[0].city + " - " + user.addresses[0].zipcode }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="formApp">
+<head>
+  <title>AngularJS Form</title>
+  <meta charset="UTF-8">
+
+  <!-- Latest minified Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="app.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#/">AngularJS Form</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#/">Form</a></li>
+            <li><a href="#/database">Database</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div ng-view></div>
+  </div>
+
+  <!-- load Angular via CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.5.9/angular-route.min.js"></script>
+  <script src="https://code.angularjs.org/1.5.9/angular-messages.min.js"></script>
+
+  <!-- load Bootstrap JavaScript and jQuery for Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- App's JavaScript -->
+  <script src="app.js"></script>
+  <script src="routes.js"></script>
+  <script src="controllers.js"></script>
+  <script src="services.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<div class="container col-md-8 padding-left-0">
+
+  <div class="page-header bottom30">
+    <h2>Please enter your details below</h2>
+  </div>
+
+  <form name="userForm" ng-submit="setUser(user); redirectToDatabase()" novalidate>
+
+    <!-- Name and email row -->
+    <div class="row bottom10">
+
+      <div class="col-md-6 bottom10" ng-class="{ 'has-error': userForm.name.$touched && userForm.name.$invalid }">
+        <label>Name</label>
+        <input type="text" name="name" ng-model="user.name" class="form-control" placeholder="Sherlock Holmes" required>
+        <div class="help-block bottom0 top0" ng-messages="userForm.name.$error" ng-show="userForm.name.$touched">
+          <p ng-message="required">Who do we say hi to?</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 bottom10" ng-class="{ 'has-error': userForm.email.$touched && userForm.email.$invalid }">
+        <label>Email</label>
+        <input type="email" name="email" ng-model="user.email" ng-pattern="emailFormat" class="form-control" placeholder="sherlock@holmes.com" required>
+        <div class="help-block bottom0 top0" ng-messages="userForm.email.$error" ng-show="userForm.email.$touched">
+          <p ng-message="required">Where do we send you birthday wishes?</p>
+          <p ng-message="pattern">Uh Oh..this email id is not quite alright.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- Phone and gender row -->
+    <div class="row bottom10">
+
+      <div class="col-md-6 bottom10" ng-class="{ 'has-error': userForm.phone.$touched && userForm.phone.$invalid }">
+        <label>Phone</label>
+        <input type="tel" name="phone" ng-model="user.phone" class="form-control" placeholder="123456789" required>
+        <div class="help-block bottom0 top0" ng-messages="userForm.phone.$error" ng-show="userForm.phone.$touched">
+          <p ng-message="required">You don't want us to call you?</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 bottom10">
+        <div><label>Gender</label></div>
+        <label class="radio-inline">
+          <input type="radio" ng-model="user.gender" name="optionsRadios" value="male" checked> Male
+        </label>
+        <label class="radio-inline">
+          <input type="radio" ng-model="user.gender" name="optionsRadios" value="female"> Female
+        </label>
+      </div>
+
+    </div>
+
+
+    <div ng-repeat="address in user.addresses track by $index">
+
+      <!-- render single address -->
+      <h3 class="row col-md-8">Address #{{$index + 1}} <a class="btn btn-default btn-circle" ng-click="newAddress()" ng-show="$last">✚</a></h3>
+
+      <!-- Number and street row -->
+      <div class="row bottom10">
+
+        <div class="col-md-6 bottom10" ng-class="{ 'has-error': userForm.number.$touched && userForm.number.$invalid }">
+          <label>House Number</label>
+          <input type="text" name="number" ng-model="address.number" class="form-control" placeholder="221" required>
+          <div class="help-block bottom0 top0" ng-messages="userForm.number.$error" ng-show="userForm.number.$touched">
+            <p ng-message="required">House number, please?</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 bottom10" ng-class="{ 'has-error': userForm.street.$touched && userForm.street.$invalid }">
+          <label>Street</label>
+          <input type="text" name="street" ng-model="address.street" class="form-control" placeholder="Baker Street" required>
+          <div class="help-block bottom0 top0" ng-messages="userForm.street.$error" ng-show="userForm.street.$touched">
+            <p ng-message="required">Street name, José?</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- City and ZIP code row -->
+      <div class="row bottom15">
+
+        <div class="col-md-6 bottom10" ng-class="{ 'has-error': userForm.city.$touched && userForm.city.$invalid }">
+          <label>City</label>
+          <input type="text" name="city" ng-model="address.city" class="form-control" placeholder="London" required>
+          <div class="help-block bottom0 top0" ng-messages="userForm.city.$error" ng-show="userForm.city.$touched">
+            <p ng-message="required">Where's home, Dr. Stone?</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 bottom10" ng-class="{ 'has-error': userForm.zipcode.$touched && userForm.zipcode.$invalid }">
+          <label>ZIP Code</label>
+          <input type="text" name="zipcode" ng-model="address.zipcode" ng-pattern="zipcodeFormat" class="form-control" placeholder="123456" required>
+          <div class="help-block bottom0 top0" ng-messages="userForm.zipcode.$error" ng-show="userForm.zipcode.$touched">
+            <p ng-message="required">Ohh..ZIP code is required!</p>
+            <p ng-message="pattern">Ohh..ZIP code doesn't seem alright (Pattern: 1234AB)</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <button type="submit" class="btn btn-default btn-lg bottom30" ng-disabled="userForm.$invalid">Submit my details</button>
+
+  </form>
+</div>
